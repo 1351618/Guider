@@ -63,6 +63,9 @@ header {
     color: $mainColor;
     font-size: 128px;
     margin-top: 100px;
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
   }
 
   .explore {
@@ -70,12 +73,18 @@ header {
     font-size: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
     span {
       color: #e36161;
     }
     p {
       color: #5b5b5b;
+    }
+    @media (max-width: 768px) {
+      font-size: 20px;
     }
   }
 }
@@ -153,6 +162,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 768px) {
+    padding: 40px 2vw;
+  }
 }
 
 .explore {
@@ -164,71 +176,20 @@ header {
   p {
     color: #5b5b5b;
   }
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .listings__banners {
+  margin-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-  gap: 8vw;
-}
-.banner {
-  height: 440px;
-  width: 360px;
-  background-color: #fff;
-  border-radius: 25px;
-  overflow: hidden;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.banner__img {
-  height: 75%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  img {
-    height: 100%;
-    width: auto;
-    transition: height 0.3s ease;
-
-    &:hover {
-      height: 106%;
-      // transition-delay: 0.2s;
-    }
-  }
-}
-.banner__content {
-  width: 100%;
-  height: 25%;
-}
-.banner__name {
-  display: flex;
-  justify-content: space-between;
-  padding: 1vh;
-  p {
-    font-size: 24px;
-  }
-
-  button {
-    @include btn-icon;
-  }
-}
-
-.banner__location {
-  display: flex;
-  justify-content: space-between;
-  padding: 1vh;
-  button {
-    color: #7fb685;
-    font-size: 20px;
-    background-color: none;
-    border: none;
-  }
+  gap: 3vw;
+  justify-content: center;
 }
 
 // ! Find a place on a map ---------------------------
@@ -245,12 +206,16 @@ header {
     border: 0px;
   }
 }
+
 .Find-on-a-map {
   p {
     color: #5b5b5b;
     span {
       color: #e36161;
     }
+  }
+  @media (max-width: 768px) {
+    font-size: 20px;
   }
 }
 
@@ -264,6 +229,9 @@ header {
     span {
       color: #e36161;
     }
+  }
+  @media (max-width: 768px) {
+    font-size: 20px;
   }
 }
 
@@ -318,6 +286,9 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 100px 100px 100px 100px;
+  @media (max-width: 768px) {
+    padding: 40px 2vw;
+  }
 }
 
 // *  Places to Eat ---
@@ -328,12 +299,19 @@ header {
   font-size: 40px;
   h1 {
     font-size: 55px;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
   }
   p {
     color: #5b5b5b;
     span {
       color: #e36161;
     }
+  }
+  @media (max-width: 768px) {
+    font-size: 20px;
   }
 }
 
@@ -358,6 +336,10 @@ header {
   iframe {
     width: 100%;
     aspect-ratio: 1/1;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 }
 
@@ -404,6 +386,10 @@ header {
   iframe {
     height: 486px;
     align-self: stretch;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 2vw;
   }
 }
 
@@ -483,6 +469,11 @@ footer {
   height: 100px;
   padding: 0px 100px;
   font-size: 20px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 0px 2vw;
+  }
 }
 .information {
   button {
