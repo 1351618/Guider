@@ -11,3 +11,18 @@
 .hide {
   display: none !important;
 }
+
+@mixin btn-hashtag {
+  font-size: 20px;
+  border-radius: 25px;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin btn-icon {
+  border: none;
+  background-color: unset;
+}

@@ -184,6 +184,7 @@ header {
 .banner {
   height: 440px;
   width: 360px;
+  background-color: #fff;
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
@@ -219,6 +220,10 @@ header {
 }
 .banner__name p {
   font-size: 24px;
+}
+.banner__name button {
+  border: none;
+  background-color: unset;
 }
 
 .banner__location {
@@ -331,6 +336,19 @@ header {
   color: #e36161;
 }
 
+.places__content {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .places__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .search-settings {
   display: flex;
   flex-direction: column;
@@ -343,20 +361,22 @@ header {
   aspect-ratio: 1/1;
 }
 
-.places__content {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .places__galeru {
+  width: 100%;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .places__galeru button {
   margin-top: 40px;
+  font-size: 20px;
+  border-radius: 25px;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 .cards {
@@ -364,9 +384,14 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2vw;
   padding: 0px 50px;
+}
+@media (max-width: 768px) {
+  .cards {
+    padding: 0px;
+  }
 }
 
 .card {
@@ -434,6 +459,10 @@ header {
   justify-content: flex-end;
   align-items: center;
   gap: 16px;
+}
+.card-action__favorite button {
+  border: none;
+  background-color: unset;
 }
 
 .card-address {
