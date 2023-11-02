@@ -36,31 +36,28 @@
 .banner .img-div img:hover {
   height: 106%;
 }
-
-.banner__content {
+.banner .content-div {
   width: 100%;
   height: 25%;
 }
-
-.banner__name {
+.banner .content-div .name {
   display: flex;
   justify-content: space-between;
   padding: 1vh;
 }
-.banner__name p {
+.banner .content-div .name p {
   font-size: 24px;
 }
-.banner__name button {
+.banner .content-div .name button {
   border: none;
   background-color: unset;
 }
-
-.banner__location {
+.banner .content-div .location {
   display: flex;
   justify-content: space-between;
   padding: 1vh;
 }
-.banner__location button {
+.banner .content-div .location button {
   color: #7fb685;
   font-size: 20px;
   background-color: none;
